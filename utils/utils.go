@@ -18,7 +18,6 @@ func ReadValues(filename string) []string {
 
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
-		// fmt.Println(scanner.Text())
 		values = append(values, scanner.Text())
 	}
 
