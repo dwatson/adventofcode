@@ -1,4 +1,4 @@
-module github.com/dwatson/adventofcode
+module github.com/dwatson/adventofcode/2022
 
 go 1.17
 

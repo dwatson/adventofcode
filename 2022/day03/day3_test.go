@@ -1,7 +1,7 @@
 package day03
 
 import (
-	"github.com/dwatson/adventofcode/utils"
+	"github.com/dwatson/adventofcode/2022/utils"
 	"reflect"
 	"testing"
 )

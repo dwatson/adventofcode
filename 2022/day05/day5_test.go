@@ -1,79 +1,79 @@
-package day04
+package day05
 
 import (
-	"github.com/dwatson/adventofcode/utils"
+	"github.com/dwatson/adventofcode/2022/utils"
 	"reflect"
 	"testing"
 )
 
-func TestDay4_1(t *testing.T) {
+func TestDay5_1(t *testing.T) {
 	var testlist = []struct {
 		input []string
-		out   int
+		out   string
 	}{
-		{utils.ReadValues("day04_example.input"), 2},
+		{utils.ReadValues("day05_example.input"), "CMZ"},
 	}
 
 	for _, tt := range testlist {
-		got := Day4_1(tt.input)
+		got := Day5_1(tt.input)
 		if !reflect.DeepEqual(tt.out, got) {
 			t.Fatalf("expected: %v, got: %v\n", tt.out, got)
 		} else {
-			t.Logf("Day 4 - Example 1: %d\n", got)
+			t.Logf("Day 5 - Example 1: %s\n", got)
 		}
 	}
 }
 
-func TestDay4_2(t *testing.T) {
+func TestDay5_2(t *testing.T) {
 	var testlist = []struct {
 		input []string
-		out   int
+		out   string
 	}{
-		{utils.ReadValues("day04.input"), 450},
+		{utils.ReadValues("day05.input"), "RLFNRTNFB"},
 	}
 
 	for _, tt := range testlist {
-		got := Day4_1(tt.input)
+		got := Day5_1(tt.input)
 		if !reflect.DeepEqual(tt.out, got) {
 			t.Fatalf("expected: %v, got: %v\n", tt.out, got)
 		} else {
-			t.Logf("Day 4 - Part 1: %d\n", got)
+			t.Logf("Day 5 - Part 1: %s\n", got)
 		}
 	}
 }
 
-func TestDay4_3(t *testing.T) {
+func TestDay5_3(t *testing.T) {
 	var testlist = []struct {
 		input []string
-		out   int
+		out   string
 	}{
-		{utils.ReadValues("day04_example.input"), 4},
+		{utils.ReadValues("day05_example.input"), "MCD"},
 	}
 
 	for _, tt := range testlist {
-		got := Day4_2(tt.input)
+		got := Day5_2(tt.input)
 		if !reflect.DeepEqual(tt.out, got) {
 			t.Fatalf("expected: %v, got: %v\n", tt.out, got)
 		} else {
-			t.Logf("Day 4 - Example 2: %d\n", got)
+			t.Logf("Day 5 - Example 2: %s\n", got)
 		}
 	}
 }
 
-func TestDay4_4(t *testing.T) {
+func TestDay5_4(t *testing.T) {
 	var testlist = []struct {
 		input []string
-		out   int
+		out   string
 	}{
-		{utils.ReadValues("day04.input"), 837},
+		{utils.ReadValues("day05.input"), "MHQTLJRLB"},
 	}
 
 	for _, tt := range testlist {
-		got := Day4_2(tt.input)
+		got := Day5_2(tt.input)
 		if !reflect.DeepEqual(tt.out, got) {
 			t.Fatalf("expected: %v, got: %v\n", tt.out, got)
 		} else {
-			t.Logf("Day 4 - Part 2: %d\n", got)
+			t.Logf("Day 5 - Part 2: %s\n", got)
 		}
 	}
 }
