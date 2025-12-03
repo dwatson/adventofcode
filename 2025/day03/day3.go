@@ -1,13 +1,11 @@
 package day03
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
 
 func findLargest(values string, startPoint int, endPoint int) (int, int) {
-	fmt.Println("findLargest", startPoint, endPoint)
 	highestValue := 0
 	highestIndex := startPoint
 
@@ -35,19 +33,15 @@ func Day3_1(values []string) int {
 
 		var sb strings.Builder
 		for i := digitCount - 1; i >= 0; i-- {
-			fmt.Println("i", i)
 			highVal, highIndex := findLargest(value, startIndex, valLen-i)
 			startIndex = highIndex + 1
-			fmt.Println(highVal)
 			sb.WriteString(strconv.Itoa(highVal))
 		}
 		val, _ := strconv.Atoi(sb.String())
-		fmt.Println("val", val)
 
 		runningTotal += val
 	}
 
-	fmt.Println(runningTotal)
 	return runningTotal
 }
 
@@ -61,18 +55,14 @@ func Day3_2(values []string) int {
 
 		var sb strings.Builder
 		for i := digitCount - 1; i >= 0; i-- {
-			fmt.Println("i", i)
 			highVal, highIndex := findLargest(value, startIndex, valLen-i)
 			startIndex = highIndex + 1
-			fmt.Println(highVal)
 			sb.WriteString(strconv.Itoa(highVal))
 		}
 		val, _ := strconv.Atoi(sb.String())
-		fmt.Println("val", val)
 
 		runningTotal += val
 	}
 
-	fmt.Println(runningTotal)
 	return runningTotal
 }
