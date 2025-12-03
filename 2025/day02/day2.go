@@ -104,25 +104,5 @@ func Day2_2(values []string) int {
 		runningTotal = runningTotal + checkRangeComplex(value)
 	}
 
-	//for _, r := range ranges {
-	//	for i := r.Lower; i <= r.Upper; i++ {
-	//		base10 := math.Log10(float64(i))
-	//		exp := int(math.Floor(base10)) + 1
-	//
-	//		divisor := int(math.Pow10(exp / 2))
-	//
-	//		upperHalf := i / divisor
-	//		lowerHalf := i % divisor
-	//
-	//		if upperHalf == lowerHalf {
-	//			part1 += i
-	//		}
-	//
-	//		if testNumber(i) {
-	//			part2 += i
-	//		}
-	//	}
-	//}
-
 	return runningTotal
 }
